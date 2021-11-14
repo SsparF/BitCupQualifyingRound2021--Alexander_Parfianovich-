@@ -61,11 +61,11 @@ namespace EpamTest
             driver2.FindElement(By.Id("cprnd")).Click();
             driver2.Quit();
 
-            // driver.FindElement(By.Name("description")).Click();
-            // Actions actions = new Actions(driver);
-            // actions.SendKeys(Keys.LeftControl+"V").Build().Perform();
+            driver.FindElement(By.Name("description")).Click();
+            Actions actions = new Actions(driver);
+            actions.SendKeys(Keys.LeftControl+"V").Build().Perform();
             
-            // driver.FindElement(By.XPath("//*[@id='dialogContent_451']/form/md-dialog-actions/button[2]")).Click();
+            driver.FindElement(By.XPath("//*[@id='dialogContent_451']/form/md-dialog-actions/button[2]")).Click();
 
             driver.Quit();
         }
